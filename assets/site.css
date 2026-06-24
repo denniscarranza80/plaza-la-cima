@@ -1,6 +1,6 @@
 /* ============================================================
    PLAZA LA CIMA — Shared Design System
-   Style: Modern Bold | Fonts: Bebas Neue (display) + Source Sans 3 (body)
+   Style: Elegant Modern | Fonts: Playfair Display (display) + Inter (body)
    ============================================================ */
 
 :root {
@@ -22,7 +22,7 @@
 * , *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.65;
@@ -38,18 +38,18 @@ button { font-family: inherit; }
 }
 
 .font-display {
-  font-family: 'Bebas Neue', 'Impact', sans-serif;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-/* Refined serif accent — paired with our bold display font for an
+/* Refined italic serif accent — paired with our display font for an
    elegant, editorial touch on tenant/business names and select copy. */
 .font-serif {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
   font-size: 1.3em;
 }
 
@@ -90,7 +90,7 @@ button { font-family: inherit; }
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .nav-logo-badge svg { width: 24px; height: 24px; }
-.nav-logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.03em; line-height: 1; color: var(--ink); }
+.nav-logo-text { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; letter-spacing: -0.01em; line-height: 1; color: var(--ink); }
 .nav-logo-sub { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: var(--primary); text-transform: uppercase; }
 .nav-links { display: flex; align-items: center; gap: 4px; }
 .nav-links a {
@@ -147,7 +147,7 @@ button { font-family: inherit; }
 @media (prefers-reduced-motion: reduce) { .blob { animation: none; } }
 
 /* ---------- Stat counter ---------- */
-.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 6vw, 64px); color: var(--primary); line-height: 1; }
+.stat-num { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(40px, 6vw, 64px); color: var(--primary); line-height: 1; }
 
 /* ---------- Section helpers ---------- */
 .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
