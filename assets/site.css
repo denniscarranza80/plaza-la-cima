@@ -120,9 +120,12 @@ button { font-family: inherit; }
 .mobile-menu.open { display: flex; }
 .mobile-menu a { padding: 14px 16px; border-radius: 10px; font-weight: 600; font-size: 15px; cursor: pointer; }
 .mobile-menu a:hover { background: var(--bg-2); }
+.mobile-menu a.mobile-cta { background: var(--primary); color: var(--white); text-align: center; margin-top: 6px; }
+.mobile-menu a.mobile-cta:hover { background: var(--primary-dk); }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
+  .nav-cta { display: none; }
   .nav-toggle { display: flex; }
 }
 
@@ -188,6 +191,23 @@ button { font-family: inherit; }
 /* Featured tenant emphasis */
 .card-featured { border: 1.5px solid var(--primary); box-shadow: 0 20px 48px rgba(217,79,43,0.14); }
 
+/* Hero checklist: pack items tighter on narrow screens so they flow
+   two-per-line instead of stacking one item per row. All text stays
+   fully visible (no scrolling required) and at a legible size. */
+@media (max-width: 600px) {
+  .hero-checklist { gap: 14px 20px !important; }
+  .hero-checklist li { font-size: 14px !important; }
+  .hero-checklist li svg { width: 14px !important; height: 14px !important; }
+}
+
+/* Featured tenant logo + feature list row */
+.tenant-feature-row { display: flex; gap: 24px; align-items: center; max-width: 100%; }
+.tenant-feature-logo { width: 150px; height: 150px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+@media (max-width: 600px) {
+  .tenant-feature-row { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .tenant-feature-logo { width: 110px; height: 110px; }
+}
+
 /* ---------- Marquee ---------- */
 .marquee { overflow: hidden; white-space: nowrap; position: relative; }
 .marquee-track { display: inline-flex; animation: marquee 28s linear infinite; }
@@ -227,8 +247,11 @@ button { font-family: inherit; }
   .container > [style*="grid-template-columns:0.9fr 1.1fr"],
   .container[style*="grid-template-columns:0.9fr 1.1fr"],
   .container[style*="grid-template-columns:0.85fr 1.15fr"],
+  .container > [style*="grid-template-columns:0.85fr 1.15fr"],
   .container[style*="grid-template-columns:0.75fr 1.25fr"],
+  .container > [style*="grid-template-columns:0.75fr 1.25fr"],
   .container[style*="grid-template-columns:0.68fr 1.32fr"],
+  .container > [style*="grid-template-columns:0.68fr 1.32fr"],
   .container[style*="grid-template-columns:1fr 1fr"],
   .container > [style*="grid-template-columns:1fr 1fr"],
   [style*="grid-template-columns:1.1fr 1fr"] {

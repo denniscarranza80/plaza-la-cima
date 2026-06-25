@@ -39,6 +39,7 @@
   <a href="visit.html">Visit</a>
   <a href="leasing.html">Leasing</a>
   <a href="contact.html">Contact</a>
+  <a href="leasing.html" class="mobile-cta">Lease Space</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -46,13 +47,13 @@
   <div class="blob" style="width:520px;height:520px;background:var(--primary);top:-180px;right:-160px;"></div>
   <div class="blob" style="width:380px;height:380px;background:var(--gold);bottom:-120px;left:-120px;animation-delay:-6s;"></div>
   <div class="container" style="position:relative;z-index:1;">
-    <div style="display:grid;grid-template-columns:0.68fr 1.32fr;gap:56px;align-items:center;">
+    <div style="display:flex;flex-direction:column;gap:48px;">
       <div>
         <p class="kicker reveal">Now Open on Stagecoach Road</p>
         <h1 class="font-display reveal" style="font-size:clamp(28px,4.2vw,52px); line-height:1.08; color:var(--ink); transition-delay:.05s;">
           More Than a Shopping Plaza<br><span style="color:var(--primary);">It's Your Neighborhood Gathering Place</span>
         </h1>
-        <p class="reveal text-balance" style="font-size:18px; color:var(--muted); max-width:520px; margin:24px 0 36px; transition-delay:.1s;">
+        <p class="reveal text-balance" style="font-size:18px; color:var(--muted); max-width:720px; margin:24px 0 36px; transition-delay:.1s;">
           Plaza La Cima is Southwest Little Rock's newest destination for great food, everyday essentials, and local services, all under one roof on Stagecoach Road.
         </p>
         <div class="reveal" style="display:flex; gap:16px; flex-wrap:wrap; transition-delay:.15s;">
@@ -61,13 +62,13 @@
           </a>
           <a href="leasing.html" class="btn btn-outline">Lease a Space</a>
         </div>
-        <ul class="reveal" style="display:flex; flex-direction:column; gap:10px; margin-top:40px; max-width:420px; transition-delay:.2s;">
+        <ul class="reveal hero-checklist" style="display:flex; flex-direction:row; flex-wrap:wrap; gap:28px; margin-top:40px; transition-delay:.2s;">
           <li style="display:flex; gap:10px; align-items:flex-start; font-size:17px; color:var(--muted); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Free On-Site Parking</li>
           <li style="display:flex; gap:10px; align-items:flex-start; font-size:17px; color:var(--muted); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Leasing Available</li>
           <li style="display:flex; gap:10px; align-items:flex-start; font-size:17px; color:var(--muted); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Come Experience Our Brand-New Spaces</li>
         </ul>
       </div>
-      <div class="reveal" style="transition-delay:.1s; position:relative; margin-left:-70px;">
+      <div class="reveal" style="transition-delay:.1s; position:relative;">
         <div style="border-radius:32px; padding:10px; background:rgba(255,255,255,0.22); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.55); box-shadow:0 30px 60px -20px rgba(26,20,16,0.25), inset 0 1px 0 rgba(255,255,255,0.6);">
           <div style="border-radius:24px; overflow:hidden; aspect-ratio:3/2;">
             <img class="lazy-img hover-lift" loading="eager" decoding="async" src="assets/images/1F66D9BC-55DE-4808-B6B0-BFBB2430112A.png" alt="Plaza La Cima monument sign and storefronts with a family shopping, mountains in the background" style="width:100%;height:100%;object-fit:contain;">
@@ -112,13 +113,21 @@
           <img class="lazy-img" loading="lazy" src="assets/images/B262BB40-94A9-4504-8B14-CE45872F36CA.png" alt="La Cima Laundromat storefront and Wash-Dry-Fold service promotion" style="width:100%; height:100%; object-fit:contain;">
           <span class="badge badge-feature" style="position:absolute; top:16px; left:16px;">★ Featured Tenant</span>
         </div>
-        <div style="padding:4px 32px 32px; display:flex; flex-direction:column; justify-content:flex-start;">
-          <span style="width:220px; height:220px; display:flex; align-items:center; justify-content:center; margin-top:20px; margin-bottom:24px; margin-left:auto;">
-            <img class="lazy-img" loading="lazy" src="assets/images/la-cima-laundromat-logo.jpeg" alt="La Cima Laundromat circular logo badge" style="width:100%; height:100%; object-fit:contain;">
-          </span>
+        <div style="padding:32px; display:flex; flex-direction:column; justify-content:center;">
           <div style="font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--primary); text-transform:uppercase; margin-bottom:8px;">Services · Unit 2</div>
           <h3 style="font-weight:800; font-size:26px; margin-bottom:10px; line-height:1.1;"><span class="font-serif">La Cima Laundromat</span></h3>
-          <p style="font-size:18px; color:var(--muted); margin-bottom:18px;">Your laundry happy place. Wash-dry-fold service from $29 per drop-off, plus self-service machines, pickup &amp; delivery, and extended hours every day.</p>
+          <p style="font-size:18px; color:var(--muted); margin-bottom:24px;">Your laundry happy place. Wash-dry-fold service from $29 per drop-off, plus self-service machines, pickup &amp; delivery, and extended hours every day.</p>
+          <div class="tenant-feature-row" style="margin-bottom:28px;">
+            <span class="tenant-feature-logo">
+              <img class="lazy-img" loading="lazy" src="assets/images/la-cima-laundromat-logo.jpeg" alt="La Cima Laundromat circular logo badge" style="width:100%; height:100%; object-fit:contain;">
+            </span>
+            <ul style="display:flex; flex-direction:column; gap:12px; min-width:0;">
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:16px; color:var(--ink); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Laundry Made Easy</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:16px; color:var(--ink); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Schedule Pickup Online</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:16px; color:var(--ink); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Fresh. Fast. Convenient.</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:16px; color:var(--ink); font-weight:600;"><svg width="16" height="16" style="flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Pick-up &amp; Delivery Powered by Uber</li>
+            </ul>
+          </div>
           <a href="stores.html" class="btn btn-primary" style="align-self:flex-start;">View Tenant Details
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
